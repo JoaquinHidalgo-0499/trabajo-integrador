@@ -1,0 +1,16 @@
+{
+    "name": "joaqu/integrador_php",
+    "autoload": {
+        "psr-4": {
+            "Joaqu\\IntegradorPhp\\": "src/",
+            "Classes\\": "./classes"
+        }
+    },
+    "authors": [
+        {
+            "name": "JoaquinHidalgo-0499",
+            "email": "joaquin-0499@hotmail.com"
+        }
+    ],
+    "require": {}
+}
