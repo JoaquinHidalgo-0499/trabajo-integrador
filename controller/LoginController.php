@@ -1,6 +1,7 @@
 <?php
-namespace Controller;
 
-class LoginController{
-    public static function login(){}
+namespace Controllers;
+
+class LoginController
+{
 }

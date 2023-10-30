@@ -14,20 +14,20 @@ class ComposerStaticInit34f80c8724222eebd423498e4a0a3f53
         ),
         'C' => 
         array (
-            'Controllers\\' => 12,
+            'Controller\\' => 11,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
         'Model\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/classes',
+            0 => __DIR__ . '/../..' . '/model',
         ),
         'MVC\\' => 
         array (
             0 => __DIR__ . '/../..' . '/',
         ),
-        'Controllers\\' => 
+        'Controller\\' => 
         array (
             0 => __DIR__ . '/../..' . '/controller',
         ),

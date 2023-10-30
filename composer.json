@@ -2,9 +2,9 @@
     "name": "joaqu/integrador_php",
     "autoload": {
         "psr-4": {
-            "Model\\": "./classes",
+            "Model\\": "./model",
             "MVC\\": "./",
-            "Controllers\\": "./controller"
+            "Controller\\": "./controller"
         }
     },
     "authors": [
