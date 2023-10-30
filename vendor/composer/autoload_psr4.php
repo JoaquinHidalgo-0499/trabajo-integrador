@@ -6,6 +6,7 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Joaqu\\IntegradorPhp\\' => array($baseDir . '/src'),
-    'Classes\\' => array($baseDir . '/classes'),
+    'Model\\' => array($baseDir . '/classes'),
+    'MVC\\' => array($baseDir . '/'),
+    'Controllers\\' => array($baseDir . '/controller'),
 );

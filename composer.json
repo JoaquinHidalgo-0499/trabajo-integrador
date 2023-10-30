@@ -2,8 +2,9 @@
     "name": "joaqu/integrador_php",
     "autoload": {
         "psr-4": {
-            "Joaqu\\IntegradorPhp\\": "src/",
-            "Classes\\": "./classes"
+            "Model\\": "./classes",
+            "MVC\\": "./",
+            "Controllers\\": "./controller"
         }
     },
     "authors": [
