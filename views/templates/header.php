@@ -2,7 +2,18 @@
 <html lang="en">
 
 <head>
-  <title>Integrador</title>
+  <title>
+    <?php
+    echo (empty($_GET['id']))
+      ? (
+        (strpos($_SERVER['REQUEST_URI'],'create')) ? "Agregando pagina": "Index"
+      )
+      : (
+        (strpos($_SERVER['REQUEST_URI'],'show')) ? "Detalle pagina": "Actualizar pagina"
+      );
+
+    ?>
+  </title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
@@ -20,8 +31,8 @@
         </a>
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#" class="nav-link px-2 text-white">Inicio</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">Paginas</a></li>
+          <li><a href="/Integrador_php/index.php" class="nav-link px-2 text-white">Inicio</a></li>
+          <li><a href="/Integrador_php/views/index.php" class="nav-link px-2 text-white">Paginas</a></li>
           <li><a href="#" class="nav-link px-2 text-white">About</a></li>
         </ul>
 
