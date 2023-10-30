@@ -3,7 +3,7 @@
         'name' => 'joaqu/integrador_php',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '5428fc06c4eb72a7d139ae5751c85abe0fb7b174',
+        'reference' => '71e431d825f52d77c0ce3eabe1ecbab6c198e708',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'joaqu/integrador_php' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '5428fc06c4eb72a7d139ae5751c85abe0fb7b174',
+            'reference' => '71e431d825f52d77c0ce3eabe1ecbab6c198e708',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
