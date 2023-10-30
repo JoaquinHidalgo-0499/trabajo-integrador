@@ -1,16 +1,7 @@
-<footer class="bg-dark text-white">
-  <div class="container">
-    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-      <nav class="navegacion">
-        <a href="nosotros.html">Nosotros</a>
-        <a href="anuncios.html">Anuncios</a>
-        <a href="blog.html">Blog</a>
-        <a href="contacto.html">Contacto</a>
-      </nav>
-    </div>
+<footer class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark text-white">
+  <div class="container text-center">
+    <p class="copyright">Todos los derechos Reservados 2023 &copy;</p>
   </div>
-
-  <p class="copyright">Todos los derechos Reservados 2023 &copy;</p>
 </footer>
 
 <!-- Bootstrap JavaScript Libraries -->
