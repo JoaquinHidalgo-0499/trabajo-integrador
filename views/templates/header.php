@@ -6,10 +6,10 @@
     <?php
     echo (empty($_GET['id']))
       ? (
-        (strpos($_SERVER['REQUEST_URI'],'create')) ? "Agregando pagina": "Index"
+        (strpos($_SERVER['REQUEST_URI'], 'create')) ? "Agregando pagina" : "Index"
       )
       : (
-        (strpos($_SERVER['REQUEST_URI'],'show')) ? "Detalle pagina": "Actualizar pagina"
+        (strpos($_SERVER['REQUEST_URI'], 'show')) ? "Detalle pagina" : "Actualizar pagina"
       );
 
     ?>
@@ -37,8 +37,8 @@
         </ul>
 
         <div class="text-end">
-          <button type="button" class="btn btn-outline-light me-2">Login</button>
-          <button type="button" class="btn btn-warning">Sign-up</button>
+          <a href="/Integrador_php/views/user/login.php" class="btn btn-outline-light me-2">Login</a>
+          <a href="/Integrador_php/views/user/logout.php" class="btn btn-warning">Sign-up</a>
         </div>
       </div>
     </div>
