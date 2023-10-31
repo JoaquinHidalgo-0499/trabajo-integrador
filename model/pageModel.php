@@ -28,10 +28,16 @@ class PageModel
         $stmt = $this->db->prepare("SELECT * FROM pages");
         return ($stmt->execute()) ? $stmt->fetchAll() : false;
     }
-    public function update($id, $title, $content)
+    public function update($id, $title, $content, $id_categorie)
     {
-        $stmt = $this->db->prepare("UPDATE pages SET title = :title WHERE id = :id");
+        $stmt = $this->db->prepare("UPDATE pages SET 
+        title = :title ,
+        content = :content ,
+        id_categorie = :id_categorie
+        WHERE id = :id");
         $stmt->bindParam(":title", $title);
+        $stmt->bindParam(":content", $content);
+        $stmt->bindParam(":id_categorie", $id_categorie);
         $stmt->bindParam(":id", $id);
 
         return ($stmt->execute()) ? $id : false;

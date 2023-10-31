@@ -16,12 +16,14 @@ $rows = $obj->index();
             <label class="form-label">Contenido</label>
             <textarea class="form-control" rows="3" name="content"></textarea>
         </div>
-        <select class="form-select" aria-label="Default select example" name="id_categorie">
-            <option selected >Seleccina Categoria</option>
-            <?php foreach ($rows as $row) : ?>
-                <option value=<?= $row['id_categorie']; ?>><?= $row['name']; ?></option>
-            <?php endforeach; ?>
-        </select>
+        <div class="mb-3">
+            <select class="form-select" aria-label="Default select example" name="id_categorie">
+                <option selected>Seleccina Categoria</option>
+                <?php foreach ($rows as $row) : ?>
+                    <option value=<?= $row['id_categorie']; ?>><?= $row['name']; ?></option>
+                <?php endforeach; ?>
+            </select>
+        </div>
         <button type="submit" class="btn btn-primary">Crear</button>
         <a href="index.php" class="btn btn-danger">Cancelar</a>
     </form>

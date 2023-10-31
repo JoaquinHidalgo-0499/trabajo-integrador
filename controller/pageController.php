@@ -23,9 +23,9 @@ class pageController
     {
         return ($this->model->index()) ? $this->model->index() : false;
     }
-    public function update($id, $title, $content)
+    public function update($id, $title, $content, $id_categorie)
     {
-        return ($this->model->update($id, $title, $content) != false) ? header("Location:show.php?id=" . $id) : header("Location:index.php");
+        return ($this->model->update($id, $title, $content, $id_categorie) != false) ? header("Location:show.php?id=" . $id) : header("Location:index.php");
     }
     public function delete($id)
     {
