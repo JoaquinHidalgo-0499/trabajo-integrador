@@ -11,10 +11,10 @@ class PageModel
         $this->db = $conection->conexion();
     }
 
-    public function insertarPagina($title, $content)
+    public function insertarPagina($title, $content, $id_categorie)
     {
-        $stmt = $this->db->prepare("INSERT INTO `pages` ( `title`, `content`, `created_at`) 
-        VALUES ('" . $title . "', '" . $content . "', current_timestamp());");
+        $stmt = $this->db->prepare("INSERT INTO `pages` ( `title`, `content`, `created_at`, `id_categorie`) 
+        VALUES ('" . $title . "', '" . $content . "', current_timestamp(), '" . $id_categorie . "');");
         return ($stmt->execute()) ? $this->db->lastInsertID() : false;
     }
     public function show($id)

@@ -1,11 +1,5 @@
 <?php
-// function estaAutenticado()
-// {
-//     session_start();
-//     if (!$_SESSION['login']) {
-//         header('Location: /');
-//     }
-// }
+header('Access-Control-Allow-Origin: *');
 
 function debuguear($var)
 {
@@ -14,3 +8,10 @@ function debuguear($var)
     echo "</pre>";
     exit;
 }
+
+// function obtenerJsonID($datos){
+
+//     echo json_encode($datos);
+// }
+
+// obtenerJsonID($_GET);

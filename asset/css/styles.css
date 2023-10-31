@@ -13,3 +13,17 @@
     top: 12px;
     left: auto;
 }
+
+.img-wrapper {
+    width: 100%;
+}
+
+#page-body-bg {
+    width: 100%;
+}
+
+.img-responsive {
+    left: 0;
+    position: absolute;
+    display: none;
+}

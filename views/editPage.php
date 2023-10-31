@@ -22,7 +22,7 @@ $page = $obj->show($_GET['id']);
             <textarea class="form-control" rows="3" name="content" value="<?= $page[2] ?>"></textarea>
         </div>
         <input type="submit" class="btn btn-primary" value="Actualizar">
-        <a href="../index.php" class="btn btn-danger">Cancelar</a>
+        <a href="index.php" class="btn btn-danger">Cancelar</a>
     </form>
 
 </div>

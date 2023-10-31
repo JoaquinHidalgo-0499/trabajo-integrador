@@ -10,9 +10,9 @@ class pageController
     {
         $this->model = new PageModel();
     }
-    public function guardar($title, $content)
+    public function guardar($title, $content, $id_categorie)
     {
-        $id = $this->model->insertarPagina($title, $content);
+        $id = $this->model->insertarPagina($title, $content, $id_categorie);
         return ($id != false) ? header("Location:show.php?id=" . $id) : header("Location:createPage.php");
     }
     public function show($id)
