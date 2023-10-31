@@ -1,0 +1,15 @@
+.box-eye {
+    position: relative;
+
+}
+
+.box-eye button {
+    border: none;
+    position: absolute;
+}
+
+.viewPassword {
+    position: absolute;
+    top: 12px;
+    left: auto;
+}

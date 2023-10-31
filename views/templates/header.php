@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!doctype html>
 <html lang="en">
 
@@ -17,6 +18,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="/Integrador_php/asset/css/styles.css">
+  <script src="/Integrador_php/asset//js/main.js"></script>
   <script src="https://kit.fontawesome.com/a83ea22b72.js" crossorigin="anonymous"></script>
 </head>
 
@@ -36,10 +39,16 @@
           <li><a href="#" class="nav-link px-2 text-white">About</a></li>
         </ul>
 
-        <div class="text-end">
-          <a href="/Integrador_php/views/user/login.php" class="btn btn-outline-light me-2">Login</a>
-          <a href="/Integrador_php/views/user/logout.php" class="btn btn-warning">Sign-up</a>
-        </div>
+        <?php if (empty($_SESSION['usuario'])) : ?>
+          <div class="text-end">
+            <a href="/Integrador_php/views/user/login.php" class="btn btn-outline-light me-2">Ingresar</a>
+            <a href="/Integrador_php/views/user/signUp.php" class="btn btn-warning">Crear Usuario</a>
+          </div>
+        <?php else : ?>
+          <div class="text-end">
+            <a href="/Integrador_php/views/user/logOut.php" class="btn btn-danger">Cerrar Sesion</a>
+          </div>
+        <?php endif; ?>
       </div>
     </div>
   </header>
